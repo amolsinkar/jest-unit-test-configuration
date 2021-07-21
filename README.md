@@ -1,8 +1,5 @@
 # jest-unit-test-configuration
-## Configure package.json file for test framework
-```
-"test:debug": "node --inspect-brk node_modules/.bin/vue-cli-service test:unit --no-cache --watch --runInBand"
-```
+
 ## Configure launch.json File for your test framework
 #### Click on the Debugging icon in the Activity Bar to bring up the Debug view. Then click on the gear icon to configure a launch.json file, selecting Node for the environment:
 
@@ -50,6 +47,10 @@
 "jest": {
    "testEnvironment": "node"
 }
+```
+#### test:debug command
+```
+"test:debug": "node --inspect-brk node_modules/.bin/vue-cli-service test:unit --no-cache --watch --runInBand"
 ```
 #### Note for windows users : if node_modules/jest is not available in your project, but node_modules/jest-cli is installed (e.g. if you are using react-boilerplate) you can replace the windows attribute by this one for both launch configurations :
 ```
